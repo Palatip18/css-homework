@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+
+    background-color: rgb(248, 248, 248);
+    color: rgb(43, 41, 41);
+
+    font-family: "Mitr", system-ui;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 30px 0 50px;
+}
+
+
+.page-header {
+    margin-bottom: 32px;
+}
+
+
+.back-home {
+    display: inline-block;
+
+    margin-bottom: 20px;
+    padding: 8px 12px;
+
+    color: rgb(43, 41, 41);
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+.back-home:hover {
+    color: white;
+    background-color: rgb(75, 75, 75);
+}
+
+
+.page-eyebrow {
+    margin-bottom: 18px;
+
+    color: rgb(71, 71, 221);
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 13px;
+}
+
+
+.page-header h1 {
+    margin-bottom: 12px;
+
+    color: rgb(32, 32, 32);
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+
+.page-description {
+    color: rgb(99, 98, 98);
+    font-size: 14px;
+}
+
+
+/* =========================
+   WORKSHOP CARD
+========================= */
+
+.workshop {
+    margin-bottom: 18px;
+    padding: 24px;
+
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 12px;
+}
+
+
+.workshop > h2 {
+    margin-bottom: 22px;
+
+    color: rgb(32, 32, 32);
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* =========================
+   WORKSHOP 1
+   Article Header
+========================= */
+
+.post {
+    padding: 24px;
+
+    background-color: rgb(250, 250, 250);
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+
+.category {
+    margin-bottom: 10px;
+
+    color: rgb(71, 71, 221);
+
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+}
+
+
+.title {
+    margin-bottom: 10px;
+
+    color: rgb(32, 32, 32);
+
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+
+.meta {
+    margin-bottom: 18px;
+
+    color: rgb(130, 130, 130);
+
+    font-size: 12px;
+}
+
+
+.lead {
+    color: rgb(80, 80, 80);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   WORKSHOP 2
+   Center Quote
+========================= */
+
+.quote {
+    padding: 40px 30px;
+
+    text-align: center;
+
+    background-color: hsl(0, 0%, 97%);
+
+    border: 1px solid hsl(0, 0%, 82%);
+    border-radius: 10px;
+}
+
+
+.quote blockquote {
+    margin-bottom: 18px;
+
+    color: hsl(0, 0%, 20%);
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+
+.quote figcaption {
+    color: hsl(0, 0%, 45%);
+
+    font-size: 13px;
+}
+
+
+.source {
+    color: hsl(240, 65%, 55%);
+
+    text-decoration: none;
+}
+
+
+.source:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   WORKSHOP 3
+   Gradient Hero
+========================= */
+
+.hero {
+    padding: 45px 36px;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        rgb(30, 30, 30),
+        rgb(75, 75, 75),
+        rgb(125, 125, 125)
+    );
+
+    border-radius: 12px;
+}
+
+
+.hero-eyebrow {
+    margin-bottom: 10px;
+
+    color: lightgray;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+.heading {
+    margin-bottom: 12px;
+
+    max-width: 650px;
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+
+.sub {
+    margin-bottom: 22px;
+
+    max-width: 600px;
+
+    color: rgb(225, 225, 225);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+.cta {
+    display: inline-block;
+
+    padding: 9px 14px;
+
+    color: rgb(32, 32, 32);
+    background-color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.cta:hover {
+    color: white;
+    background-color: rgb(71, 71, 221);
+}
+
+
+/* =========================
+   WORKSHOP 4
+   Notice Bar
+========================= */
+
+.notice {
+    padding: 20px 22px;
+
+    background-color: rgb(245, 245, 245);
+
+    border-left: 5px solid rgb(71, 71, 221);
+    border-radius: 8px;
+}
+
+
+.notice-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 10px;
+
+    color: rgb(32, 32, 32);
+
+    font-size: 19px;
+    font-weight: 500;
+}
+
+
+.notice-text {
+    margin-bottom: 12px;
+
+    color: rgb(80, 80, 80);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+.notice-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    color: rgb(120, 120, 120);
+
+    font-size: 12px;
+}
+
+
+.material-symbols-outlined {
+    color: rgb(71, 71, 221);
+    font-size: 21px;
+}

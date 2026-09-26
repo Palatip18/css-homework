@@ -1,78 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Mitr:wght@200;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Mitr:wght@200;300;400;500;600;700&display=swap');
 
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Black Ops One", "Mitr", system-ui;
 }
+
 
 body {
     min-height: 100vh;
-    background-color: white;
+
+    background-color: rgb(248, 248, 248);
+    color: rgb(43, 41, 41);
+
+    font-family: "Mitr", system-ui;
 }
 
+
+/* =========================
+   DASHBOARD
+========================= */
 
 .dashboard {
     min-height: 100vh;
+
     display: flex;
 }
+
+
+/* =========================
+   SIDEBAR
+========================= */
 
 .sidebar {
     flex: 0 0 220px;
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    background-color: rgb(75, 75, 75);
+    gap: 8px;
+
+    padding: 20px 14px;
+
+    background-color: rgb(55, 55, 55);
+
     border-right: 1px solid black;
 }
 
+
 .logo {
-    color: lightgray;
+    margin-bottom: 12px;
+
+    color: white;
+
+    font-family: "Black Ops One", "Mitr", system-ui;
     font-size: 30px;
-    padding: 20px 15px;
 }
 
+
 .sidebar a {
-    padding: 12px 15px;
-    text-decoration: none;
+    padding: 11px 12px;
+
     color: white;
-    border-radius: 6px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 14px;
     font-weight: 300;
 }
 
+
 .sidebar a:hover {
-    background-color: rgb(95, 95, 95);
+    background-color: rgb(80, 80, 80);
 }
+
+
+/* Back Home */
+
+.sidebar .back-home {
+    margin-bottom: 12px;
+
+    color: white;
+    background-color: rgb(75, 75, 75);
+
+    border: 1px solid rgb(110, 110, 110);
+
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+.sidebar .back-home:hover {
+    color: rgb(43, 41, 41);
+    background-color: white;
+
+    border-color: white;
+}
+
+
+/* =========================
+   MAIN
+========================= */
 
 .main {
     flex: 1;
+
     min-width: 0;
+
     display: flex;
     flex-direction: column;
+
     background-color: white;
 }
 
+
+/* =========================
+   APP HEADER
+========================= */
+
 .app-header {
-    min-height: 72px;
+    min-height: 78px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    gap: 20px;
+
+    padding: 12px 20px;
+
     background-color: white;
+
     border-bottom: 1px solid lightgray;
 }
 
+
 .brand {
+    color: rgb(32, 32, 32);
+
     text-decoration: none;
-    font-size: 25px;
-    font-weight: 600;
-    color: rgb(0, 0, 0);
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 24px;
+    font-weight: 400;
 }
+
 
 .nav {
     display: flex;
@@ -80,180 +153,350 @@ body {
     gap: 20px;
 }
 
+
 .nav a {
-    color: rgb(43, 41, 41);
+    color: rgb(75, 75, 75);
+
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 400;
+
+    font-size: 14px;
 }
+
+
+.nav a:hover {
+    color: rgb(71, 71, 221);
+}
+
 
 .cta {
-    padding: 10px 14px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
+    padding: 9px 14px;
+
     color: rgb(71, 71, 221);
-    background-color: lightgray;
-    border: 1px solid darkgray;
-    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+
+    border: 1px solid lightgray;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
 }
 
-footer {
-    margin-top: auto;
-    border: 1px solid black;
+
+.cta:hover {
+    color: white;
+    background-color: rgb(71, 71, 221);
+
+    border-color: rgb(71, 71, 221);
 }
 
-.panel {
-    padding: 0 20px;
+
+/* =========================
+   MEDIA OBJECT
+========================= */
+
+.media {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px 30px;
+
+    background-color: white;
+
     border-bottom: 1px solid lightgray;
 }
 
+
+.avatar {
+    width: 54px;
+    height: 54px;
+
+    flex: 0 0 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    background-color: rgb(55, 55, 55);
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+}
+
+
+.media__content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.media__title {
+    margin-bottom: 4px;
+
+    color: rgb(32, 32, 32);
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+.media__meta {
+    color: rgb(99, 98, 98);
+
+    font-size: 13px;
+}
+
+
+.media__action {
+    padding: 8px 18px;
+
+    color: white;
+    background-color: rgb(71, 71, 221);
+
+    border: 1px solid rgb(71, 71, 221);
+    border-radius: 8px;
+
+    font-family: "Mitr", system-ui;
+    font-size: 13px;
+}
+
+
+.media__action:hover {
+    background-color: rgb(75, 75, 75);
+
+    border-color: rgb(75, 75, 75);
+}
+
+
+/* =========================
+   CARD LIST
+========================= */
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    padding: 20px;
+
+    background-color: rgb(248, 248, 248);
+
+    border-bottom: 1px solid lightgray;
+}
+
+
+.card {
+    flex: 1 1 180px;
+
+    min-height: 125px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+
+.card__eyebrow {
+    margin-bottom: 6px;
+
+    color: rgb(71, 71, 221);
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 12px;
+}
+
+
+.card h3 {
+    margin-bottom: 8px;
+
+    color: rgb(32, 32, 32);
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.card p {
+    color: rgb(99, 98, 98);
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    padding: 22px 20px;
+
+    background-color: white;
+
+    border-bottom: 1px solid lightgray;
+}
+
+
+.topbar .label {
+    margin-bottom: 5px;
+
+    color: rgb(71, 71, 221);
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 12px;
+}
+
+
+.topbar h1 {
+    color: rgb(32, 32, 32);
+
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.topbar button {
+    padding: 10px 15px;
+
+    color: rgb(43, 41, 41);
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 8px;
+
+    font-family: "Mitr", system-ui;
+    font-size: 13px;
+}
+
+
+.topbar button:hover {
+    color: white;
+    background-color: rgb(75, 75, 75);
+
+    border-color: rgb(75, 75, 75);
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.summary {
+    display: flex;
+    gap: 18px;
+
+    padding: 20px;
+
+    background-color: rgb(248, 248, 248);
+
+    border-bottom: 1px solid lightgray;
+
+    color: rgb(99, 98, 98);
+}
+
+
+.summary article {
+    flex: 1;
+
+    min-height: 100px;
+
+    padding: 18px;
+
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+
+    font-size: 13px;
+}
+
+
+.summary strong {
+    color: rgb(32, 32, 32);
+
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   ACTION BAR
+========================= */
+
+.panel {
+    margin-top: auto;
+
+    padding: 0 20px;
+
+    background-color: white;
+
+    border-top: 1px solid lightgray;
+}
+
+
 .action-bar {
     min-height: 74px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 16px;
 }
 
+
 .action-group {
     display: flex;
     gap: 10px;
 }
 
+
 .action-group button {
     padding: 8px 14px;
-    border-radius: 10px;
-    border: 1px solid darkgray;
-    color: rgb(0, 0, 0);
+
+    color: rgb(43, 41, 41);
     background-color: white;
-    font-weight: 500;
+
+    border: 1px solid lightgray;
+    border-radius: 8px;
+
+    font-family: "Mitr", system-ui;
     font-size: 13px;
+    font-weight: 500;
 }
+
+
+.action-group button:hover {
+    color: white;
+    background-color: rgb(75, 75, 75);
+
+    border-color: rgb(75, 75, 75);
+}
+
 
 .action-group .primary {
     color: white;
-    background-color: rgb(138, 141, 140);
-    border: 1px solid black;
+    background-color: rgb(71, 71, 221);
+
+    border-color: rgb(71, 71, 221);
 }
 
-.media {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 16px 30px;
-    border-bottom: 1px solid lightgray;
-}
 
-.avatar {
-    width: 50px;
-    height: 52px;
-    flex: 0 0 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: rgb(59, 61, 88);
-    border: 1px solid black;
-    border-radius: 10px;
-}
+.action-group .primary:hover {
+    background-color: rgb(55, 55, 55);
 
-.media__content {
-    flex: 1;
-    min-width: 0;
-}
-
-.media__title {
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.media__meta {
-    color: rgb(99, 98, 98);
-}
-
-.media__action {
-    padding: 7px 18px;
-    border-radius: 10px;
-    border: 1px solid black;
-    color: white;
-    background-color: rgb(42, 42, 87);
-}
-
-.card-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    border-bottom: 1px solid lightgray;
-}
-
-.card {
-    flex: 1 1 180px;
-    padding: 20px;
-    min-height: 120px;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-.card h3 {
-    font-weight: 300;
-}
-
-.card__eyebrow {
-    color: rgb(74, 138, 118);
-}
-
-.card p {
-    color: rgb(99, 98, 98);
-}
-
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid black;
-}
-
-.topbar .label {
-    font-size: 15px;
-    color: rgb(99, 98, 98);
-}
-
-.topbar h1 {
-    font-weight: 500;
-}
-
-.topbar button {
-    padding: 12px 16px;
-    border-radius: 10px;
-}
-
-.summary {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    border-bottom: 1px solid black;
-    color: rgb(99, 98, 98);
-}
-
-.summary strong {
-    color: black;
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.summary article {
-    flex: 1;
-    min-height: 100px;
-    padding: 18px;
-    border: 1px solid black;
-    border-radius: 8px;
-}
-
-button:hover {
-    color: white;
-    background-color: rgb(138, 141, 140);
-    border: 1px solid black;
+    border-color: rgb(55, 55, 55);
 }

@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+
+    background-color: rgb(248, 248, 248);
+    color: rgb(43, 41, 41);
+
+    font-family: "Mitr", system-ui;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 30px 0 50px;
+}
+
+
+.page-header {
+    margin-bottom: 32px;
+}
+
+
+.back-home {
+    display: inline-block;
+
+    margin-bottom: 20px;
+    padding: 8px 12px;
+
+    color: rgb(43, 41, 41);
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+.back-home:hover {
+    color: white;
+    background-color: rgb(75, 75, 75);
+}
+
+
+.page-eyebrow {
+    margin-bottom: 18px;
+
+    color: rgb(71, 71, 221);
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 13px;
+}
+
+
+.page-header h1 {
+    margin-bottom: 12px;
+
+    color: rgb(32, 32, 32);
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+
+.page-description {
+    color: rgb(99, 98, 98);
+    font-size: 14px;
+}
+
+
+/* =========================
+   WORKSHOP CARD
+========================= */
+
+.workshop {
+    margin-bottom: 18px;
+    padding: 24px;
+
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 12px;
+}
+
+
+.workshop > h2 {
+    margin-bottom: 22px;
+
+    color: rgb(32, 32, 32);
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* =========================
+   WORKSHOP 1
+   Notice Card
+========================= */
+
+.notice {
+    margin: 10px 0;
+
+    padding: 20px 22px;
+
+    background-color: rgb(245, 245, 245);
+
+    border: 1px solid lightgray;
+    border-left: 5px solid rgb(71, 71, 221);
+
+    border-radius: 8px;
+}
+
+
+.notice__title {
+    margin-bottom: 8px;
+
+    color: rgb(32, 32, 32);
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.notice__body {
+    color: rgb(99, 98, 98);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   WORKSHOP 2
+   Tag Menu
+========================= */
+
+.tags {
+    padding: 16px;
+
+    background-color: rgb(250, 250, 250);
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+
+.tag {
+    display: inline-block;
+
+    margin-right: 8px;
+
+    padding: 8px 12px;
+
+    color: rgb(75, 75, 75);
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+
+.tag:hover {
+    color: white;
+    background-color: rgb(75, 75, 75);
+}
+
+
+.tag.active {
+    color: white;
+    background-color: rgb(71, 71, 221);
+
+    border-color: rgb(71, 71, 221);
+}
+
+
+/* =========================
+   WORKSHOP 3
+   Register Form
+========================= */
+
+.form {
+    width: 100%;
+
+    padding: 24px;
+
+    background-color: rgb(250, 250, 250);
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+
+.form h2 {
+    margin-bottom: 18px;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.input {
+    width: 100%;
+
+    margin-bottom: 12px;
+
+    padding: 11px 12px;
+
+    border: 1px solid lightgray;
+    border-radius: 8px;
+
+    background-color: white;
+
+    font-family: "Mitr", system-ui;
+    font-size: 13px;
+}
+
+
+.input:focus {
+    outline: none;
+    border-color: rgb(71, 71, 221);
+}
+
+
+.btn {
+    width: 100%;
+
+    padding: 11px 14px;
+
+    color: white;
+    background-color: rgb(71, 71, 221);
+
+    border: 1px solid rgb(71, 71, 221);
+    border-radius: 8px;
+
+    font-family: "Mitr", system-ui;
+    font-size: 13px;
+}
+
+
+.btn:hover {
+    background-color: rgb(75, 75, 75);
+    border-color: rgb(75, 75, 75);
+}
+
+
+/* =========================
+   WORKSHOP 4
+   Activity Log
+========================= */
+
+.panel {
+    padding: 22px;
+
+    background-color: rgb(250, 250, 250);
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+
+.panel h3 {
+    margin-bottom: 14px;
+
+    color: rgb(32, 32, 32);
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.log {
+    height: 160px;
+
+    padding: 14px;
+
+    overflow-y: auto;
+
+    background-color: rgb(45, 45, 45);
+    color: rgb(230, 230, 230);
+
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+
+.log p {
+    margin-bottom: 10px;
+
+    font-size: 12px;
+    line-height: 1.6;
+}

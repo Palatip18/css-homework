@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+
+    background-color: rgb(248, 248, 248);
+    color: rgb(43, 41, 41);
+
+    font-family: "Mitr", system-ui;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 30px 0 50px;
+}
+
+
+.page-header {
+    margin-bottom: 32px;
+}
+
+
+.back-home {
+    display: inline-block;
+
+    margin-bottom: 20px;
+    padding: 8px 12px;
+
+    color: rgb(43, 41, 41);
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+.back-home:hover {
+    color: white;
+    background-color: rgb(75, 75, 75);
+
+    border-color: rgb(75, 75, 75);
+}
+
+
+.page-eyebrow {
+    margin-bottom: 18px;
+
+    color: rgb(71, 71, 221);
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 13px;
+}
+
+
+.page-header h1 {
+    margin-bottom: 12px;
+
+    color: rgb(32, 32, 32);
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+
+.page-description {
+    color: rgb(99, 98, 98);
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   WORKSHOP
+========================= */
+
+.workshop {
+    margin-bottom: 18px;
+    padding: 24px;
+
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 12px;
+}
+
+
+.workshop > h2 {
+    margin-bottom: 22px;
+
+    color: rgb(32, 32, 32);
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* =========================
+   WORKSHOP 1
+   Profile Summary Card
+========================= */
+
+.profile-card {
+    width: 320px;
+
+    padding: 24px;
+
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 14px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.avatar {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 16px;
+
+    color: white;
+    background-color: rgb(55, 55, 55);
+
+    border-radius: 50%;
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 24px;
+}
+
+
+.name {
+    margin-bottom: 4px;
+
+    color: rgb(32, 32, 32);
+
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.role {
+    margin-bottom: 14px;
+
+    color: rgb(71, 71, 221);
+
+    font-size: 14px;
+}
+
+
+.bio {
+    margin-bottom: 18px;
+
+    color: rgb(99, 98, 98);
+
+    font-size: 13px;
+    line-height: 1.7;
+
+    opacity: 0.8;
+}
+
+
+.badge {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    color: rgb(71, 71, 221);
+    background-color: rgb(238, 238, 248);
+
+    border: 1px solid rgb(220, 220, 235);
+    border-radius: 20px;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   WORKSHOP 2
+   Archived Lesson Tile
+========================= */
+
+.lesson-tile {
+    width: 320px;
+
+    padding: 22px;
+
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 12px;
+
+    filter: grayscale(1);
+
+    opacity: 0.65;
+}
+
+
+.cover {
+    height: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    color: white;
+    background-color: rgb(71, 71, 221);
+
+    border-radius: 10px;
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 30px;
+}
+
+
+.lesson-tile h2 {
+    margin-bottom: 8px;
+
+    color: rgb(32, 32, 32);
+
+    font-size: 19px;
+    font-weight: 500;
+}
+
+
+.lesson-tile p {
+    margin-bottom: 16px;
+
+    color: rgb(99, 98, 98);
+
+    font-size: 13px;
+}
+
+
+.status {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    background-color: lightgray;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   WORKSHOP 3
+   Glass Notice Panel
+========================= */
+
+.scene {
+    min-height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+
+    background: linear-gradient(
+        135deg,
+        rgb(25, 25, 25),
+        rgb(70, 70, 70),
+        rgb(120, 120, 120)
+    );
+
+    border-radius: 12px;
+}
+
+
+.glass-panel {
+    width: 380px;
+
+    padding: 28px;
+
+    background-color: rgba(255, 255, 255, 0.14);
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 14px;
+
+    backdrop-filter: blur(12px);
+
+    color: white;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.glass-panel .eyebrow {
+    margin-bottom: 8px;
+
+    color: lightgray;
+
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 12px;
+
+    opacity: 0.85;
+}
+
+
+.glass-panel h2 {
+    margin-bottom: 12px;
+
+    color: white;
+
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+.glass-panel > p:last-child {
+    color: rgb(225, 225, 225);
+
+    font-size: 13px;
+    line-height: 1.7;
+
+    opacity: 0.9;
+}
