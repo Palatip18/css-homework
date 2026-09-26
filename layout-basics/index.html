@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Basics</title>
+    <link rel="stylesheet" href="./layout-basics.css" />
+    <link rel="stylesheet" href="../global.css" />
+  </head>
+  <body>
+    <main class="page">
+      <!-- Workshop 1 -->
+      <section class="workshop">
+        <h2>Workshop 1: Notification Badge</h2>
+
+        <div class="toolbar">
+          <button
+            class="icon-btn"
+            aria-label="Home"
+            onclick="window.location.href = '../'"
+          >
+            <span class="icon">🏠</span>
+          </button>
+
+          <button class="icon-btn" aria-label="Messages">
+            <span class="icon">✉️</span>
+            <span class="badge">3</span>
+          </button>
+
+          <button class="icon-btn" aria-label="Notifications">
+            <span class="icon">🔔</span>
+            <span class="badge badge--dot"></span>
+          </button>
+
+          <button class="icon-btn" aria-label="Profile">
+            <span class="icon">👤</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Workshop 2 -->
+      <section class="workshop">
+        <h2>Workshop 2: Floating Article</h2>
+
+        <article class="article">
+          <div class="photo">📷</div>
+
+          <h3 class="headline">เรียน CSS ด้วยการลงมือทำ</h3>
+
+          <p class="text">
+            บทความนี้มีรูปภาพแทรกอยู่กลางเนื้อหา รูปจะลอยชิดซ้าย
+            และข้อความทุกย่อหน้าจะไหลเลียบไปตามแนวข้างของรูป
+            แล้วต่อยาวลงมาด้านล่างเมื่อพ้นความสูงของรูปแล้ว
+          </p>
+
+          <p class="text">
+            ถ้าอยากเห็นผลของ clear ให้ลองนึกว่าส่วนท้ายด้านล่าง
+            ต้องเริ่มต้นใหม่ใต้รูปเสมอ ไม่ใช่แทรกตัวอยู่ข้างรูป
+          </p>
+
+          <div class="footer">— อ่านตอนต่อไป —</div>
+        </article>
+      </section>
+
+      <!-- Workshop 3 -->
+      <section class="workshop">
+        <h2>Workshop 3: Sticky Header</h2>
+
+        <div class="sticky-demo">
+          <header class="hero">
+            <div class="container">
+              <h1 class="page-title">เส้นทางเรียน CSS</h1>
+              <p class="page-sub">สี่เฟสแรกของคอร์ส — เลื่อนเพื่อสำรวจ</p>
+            </div>
+          </header>
+
+          <main class="content">
+            <section class="chapter">
+              <h2 class="chapter-head">บทที่ 1 · CSS Fundamentals</h2>
+              <p class="chapter-body">
+                เริ่มจากสิ่งที่ CSS ทำ วิธีเขียน rule และหลักคิดการเลือก
+              </p>
+            </section>
+
+            <section class="chapter">
+              <h2 class="chapter-head">บทที่ 2 · Box Model</h2>
+              <p class="chapter-body">
+                ทุก element คือกล่องสี่ชั้น เนื้อหา แพดดิง ขอบ และระยะห่าง
+              </p>
+            </section>
+
+            <section class="chapter">
+              <h2 class="chapter-head">บทที่ 3 · Typography & Colors</h2>
+              <p class="chapter-body">
+                เลือกฟอนต์ ขนาด สี และพื้นหลังให้เนื้อหาอ่านง่าย
+              </p>
+            </section>
+
+            <section class="chapter">
+              <h2 class="chapter-head">บทที่ 4 · Layout Basics</h2>
+              <p class="chapter-body">
+                ตำแหน่ง การซ้อนชั้น การไหลรอบ และการจัดกึ่งกลาง
+              </p>
+            </section>
+          </main>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
