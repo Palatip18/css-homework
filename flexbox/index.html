@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Flexbox Workshop</title>
+
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./flexbox.css" />
+  </head>
+
+  <body>
+    <!-- 5. Dashboard Shell-->
+
+    <main class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <p class="logo">Array-a</p>
+
+        <a href="#">Overview</a>
+        <a href="#">Lessons</a>
+        <a href="#">Workshops</a>
+      </aside>
+
+      <!-- Main Content -->
+      <section class="main">
+        <!--1. App Header -->
+
+        <header class="app-header">
+          <a class="brand" href="#">Array-a</a>
+
+          <nav class="nav">
+            <a href="#">คอร์ส</a>
+            <a href="#">บทความ</a>
+            <a href="#">Workshop</a>
+          </nav>
+
+          <a class="cta" href="#">เริ่มเรียน</a>
+        </header>
+
+        <!--3. Media Object -->
+
+        <article class="media">
+          <div class="avatar">JS</div>
+
+          <div class="media__content">
+            <p class="media__title">JavaScript Foundations</p>
+
+            <p class="media__meta">
+              บทเรียนใหม่พร้อม workshop สำหรับฝึกคิดเป็นขั้นตอน
+            </p>
+          </div>
+
+          <button class="media__action">เปิด</button>
+        </article>
+
+        <!--4. Responsive Card Row -->
+
+        <section class="card-list">
+          <article class="card">
+            <p class="card__eyebrow">HTML</p>
+
+            <h3>Semantic Page</h3>
+
+            <p>ฝึกจัดโครงหน้าให้มีความหมาย</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">CSS</p>
+
+            <h3>Flexbox Layout</h3>
+
+            <p>ฝึกจัดแนวและแบ่งพื้นที่ในหนึ่งแกน</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">JS</p>
+
+            <h3>DOM Practice</h3>
+
+            <p>ฝึกเชื่อมปุ่มกับพฤติกรรมของหน้าเว็บ</p>
+          </article>
+        </section>
+
+        <!-- Dashboard Content -->
+
+        <div class="topbar">
+          <div>
+            <p class="label">Flexbox Workshop</p>
+
+            <h1>จัดพื้นที่หลักของ dashboard</h1>
+          </div>
+
+          <button>New lesson</button>
+        </div>
+
+        <div class="summary">
+          <article>
+            Courses<br />
+            <strong>12</strong>
+          </article>
+
+          <article>
+            Lessons<br />
+            <strong>64</strong>
+          </article>
+
+          <article>
+            Workshops<br />
+            <strong>8</strong>
+          </article>
+        </div>
+
+        <!-- 2. Action Bar -->
+        <footer class="panel">
+          <div class="action-bar">
+            <div class="action-group">
+              <button onclick="window.location.href = '../'">ย้อนกลับ</button>
+              <button>ดูตัวอย่าง</button>
+            </div>
+
+            <div class="action-group">
+              <button class="secondary">บันทึกร่าง</button>
+              <button class="primary">เผยแพร่</button>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

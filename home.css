@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Mitr:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: #f7f7f7;
+    color: #222;
+
+    font-family: "Mitr", system-ui;
+
+    padding: 50px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.header {
+    margin-bottom: 35px;
+}
+
+.small-title {
+    color: rgb(71, 71, 221);
+
+    font-family: "Black Ops One", system-ui;
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+.header h1 {
+    font-family: "Black Ops One", "Mitr", system-ui;
+    font-size: 42px;
+    font-weight: 400;
+
+    margin-bottom: 10px;
+}
+
+.description {
+    color: rgb(99, 98, 98);
+
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+/* =========================
+   Homework List
+========================= */
+
+.homework-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.homework {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 22px 24px;
+
+    color: #222;
+    text-decoration: none;
+
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+.homework h2 {
+    font-family: "Black Ops One", "Mitr", system-ui;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    margin-bottom: 5px;
+}
+
+.homework p {
+    color: rgb(99, 98, 98);
+
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.homework span {
+    color: rgb(71, 71, 221);
+
+    font-size: 26px;
+}
+
+
+/* =========================
+   Hover
+========================= */
+
+.homework:hover {
+    border-color: rgb(71, 71, 221);
+    transform: translateX(4px);
+}
+
+.homework:hover h2 {
+    color: rgb(71, 71, 221);
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid lightgray;
+
+    color: rgb(99, 98, 98);
+
+    font-size: 12px;
+}
